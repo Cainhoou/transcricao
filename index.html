@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Transcrição de Áudio</title>
+</head>
+<body>
+  <header>
+    <img src="audio.png" alt="" width="100" id="ce">
+    <nav class="right-align">
+      <ul>
+        <li><a href="https://guia-wcag.com/">Início</a></li>
+        <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded">Sobre</a></li>
+        <li><a href="https://www.w3.org/WAI/about/contacting/">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+
+    <div id="contrastOptions">
+      <button id="blackAndWhite">Preto e Branco</button>
+      <button id="highContrast">Alto Contraste</button>
+      <button id="blueContrast">Azul</button>
+      <button id="greenContrast">Verde</button>
+      <button id="yellowContrast">Amarelo</button>
+    </div>
+    
+    <h2>A transcrição de áudio é o processo de conversão dos diálogos falados em texto escrito. </h2>
+    <img src="https://transkriptor.com/img/blogImages/en/how-to-live-transcribe-audio.webp" alt="" width="500px">
+    <img src="https://transkriptor.com/img/blogImages/en/best-transcription-apps-for-iphone.webp" alt="" width="500px">
+
+    <div class="botoes">
+
+    <div class="principal">
+      <button onclick="toggleVisibility('section1')">Mostrar/Ocultar Seção 1</button>
+      <div id="section1" class="hidden">
+        <h2>Seção 1 - A importância da Transcrição de áudio na Acessibilidade</h2>
+        <p>A transcrição de áudio é essencial para garantir a <br>
+          acessibilidade digital, permitindo que pessoas surdas <br>
+          ou com deficiência auditiva acessem conteúdo auditivo <br>
+          em formato textual. Além de cumprir regulamentações <br>
+          de acessibilidade, como a ADA nos EUA e as WCAG do <br>
+          W3C, as transcrições melhoram a indexação de <br>
+          conteúdo online e ampliam sua audiência.
+        </p>
+      </div>
+    </div>
+
+    <div class="principal">
+      <button onclick="toggleVisibility('section2')">Mostrar/Ocultar Seção 2</button>
+      <div id="section2" class="hidden">
+        <h2>Seção 2 - Benefícios da Transcrição em áudio</h2>
+        <p>A transcrição de áudio é crucial para tornar o <br>
+          conteúdo auditivo acessível a pessoas surdas ou <br>
+          com deficiência auditiva, além de melhorar a <br>
+          compreensão do conteúdo em geral. Ela também <br>
+          melhora a indexação de conteúdo por mecanismos <br>
+          de busca, oferece flexibilidade na escolha do <br>
+          modo de consumo e facilita a tradução e colaboração <br>
+          em projetos.
+        </p>
+      </div>
+    </div>
+    
+    <div class="principal">
+      <button onclick="toggleVisibility('section3')">Mostrar/Ocultar Seção 3</button>
+      <div id="section3" class="hidden">
+        <h2>Seção 3 - Três Apps de transcrição com IA</h2>
+        <div class="app-info">
+          <div class="app-text">
+            <p>Happy Scribe: Transcreve áudio em <br>
+              texto com precisão, usando <br>
+              rreconhecimento de voz baseado em <br>
+              IA. É utilizado para transcrição <br>
+              eficiente de entrevistas, reuniões e <br>
+              palestras em vários idiomas.</p>
+          </div>
+          <div class="app-image">
+            <img src="https://transkriptor.com/img/inline-images/happyscribe-transkriptor-2.webp" alt="" width="100px">
+          </div>
+        </div>
+
+        <div class="app-info">
+          <div class="app-text">
+            <p>Rev Voice Recorder & Transcription: <br>
+              Proporciona serviços de gravação de <br>
+              áudio e transcrição de alta <br>
+              qualidade, combinando IA e transcritores humanos para <br>
+              garantir precisão nas transcrições. É <br>
+              uma opçãoconfiável para diversos <br>
+              tipos de conteúdo.
+          </div>
+          <div class="app-image">
+            <img src="https://play-lh.googleusercontent.com/mBb8n1momuM1DOqeECPH183rMTpK4A5lSJBox7nNxHSmFIxd4BQ1bA3Tg0fYweY-aEMn" alt="" width="100px">
+          </div>
+        </div>
+
+        <div class="app-info">
+          <div class="app-text">
+            <p>SpeechTexter: Oferece transcrição <br>
+              em tempo real utilizando tecnologia <br>
+              de reconhecimento de voz baseada <br>
+              em IA, sendo útil para ditado e <br>
+              anotações rápidas.
+          </div>
+          <div class="app-image">
+            <img src="https://play-lh.googleusercontent.com/e59BbUpQWqpq4p48qk3kd4NphxJ6Imur0Wgek_y7KDpcAvRWFDK-lC4usdYAzTwNkx4" alt="" width="100px">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+
+  </div>
+
+    <button id="startButton">Iniciar Transcrição</button>
+    <div id="transcriptionContainer">
+      <div id="transcription"></div>
+    </div>
+    
+    </main>
+      
+    <footer>
+      <p>© 2024 - Site de Transcrição de Áudio na Acessibilidade - Desenvolvido por Caio Dassi Vieira</p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+    </html>
+    
